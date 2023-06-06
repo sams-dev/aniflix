@@ -313,3 +313,11 @@ ul {
 .mdi-bookmark:hover {
     color: #171717;
 }
+
+.mdi-chevron-down {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.mdi-chevron-down:hover {
+    color: black;
+}
