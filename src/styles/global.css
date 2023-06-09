@@ -321,3 +321,10 @@ ul {
 .mdi-chevron-down:hover {
     color: black;
 }
+
+.btn-light {
+    size: 24px;
+    padding: 0;
+    margin: 0;
+    float: right;
+}
