@@ -200,12 +200,17 @@ ul {
     z-index: 3;
 }
 
-.btn-light {
-    margin-right: 15px;
+.btn-play {
+    margin-right: 10px;
     margin-left: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #fff;
+}
+
+.btn-play:hover {
+    background-color: rgba(277, 277, 277, 0.8);
 }
 
 .mdi-play{
@@ -327,4 +332,32 @@ ul {
     padding: 0;
     margin: 0;
     float: right;
+}
+
+/*modal*/
+
+.modal-dialog {
+    background-color: #1b1b1b;
+    border-radius: 10px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #1b1b1b;
+    padding: 15px;
+    width: 1000px;
+}
+
+
+
+.card-modal {
+    width: 350px;
+}
+
+.sinopse p {
+    width: 600px;
+    height: 340px;
 }
