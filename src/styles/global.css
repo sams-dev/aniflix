@@ -256,8 +256,8 @@ ul {
 .filme:hover {
     transform: scale(1.10);
     cursor: pointer;
-    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.4),
-              0 -0.2rem 0.4rem rgba(0, 0, 0, 0.4);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, 
+                rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .card {
@@ -340,9 +340,7 @@ ul {
     background-color: #1b1b1b;
     border-radius: 10px;
     padding-left: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   
 }
 
 .modal-content {
@@ -350,8 +348,6 @@ ul {
     padding: 15px;
     width: 1000px;
 }
-
-
 
 .card-modal {
     width: 350px;
