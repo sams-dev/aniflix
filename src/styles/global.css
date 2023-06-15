@@ -336,24 +336,63 @@ ul {
 
 /*modal*/
 
-.modal-dialog {
+.modal-dialog,
+.modal-content {
     background-color: #1b1b1b;
+}
+
+.modal-dialog {
+    max-width: 80%;
+    max-height: 100px;
     border-radius: 10px;
-    padding-left: 10px;
-   
 }
 
 .modal-content {
-    background-color: #1b1b1b;
-    padding: 15px;
-    width: 1000px;
+    max-width: 100%;
+    padding: 10px;
+}
+
+.modal-hero {
+    margin-top: 0;
+    height: 675px;
 }
 
 .card-modal {
     width: 350px;
 }
 
-.sinopse p {
+.sinopse {
+    max-width: 740px;
+    height: 350px;
+}
+
+.ep-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#temps {
+    background-color: #252525;
+    width: 110px;
+    float: right;
+}
+
+#eps {
     width: 600px;
-    height: 340px;
+}
+
+.dropdown-menu {
+    width: 600px;
+    background-color: #252525;
+}
+
+.dropdown-item {
+    color: #c1c1c1;
+}
+
+.dropdown-item:hover {
+    color: #DE1324;
+    background-color: #2e2e2e;
 }
