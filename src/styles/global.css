@@ -334,7 +334,11 @@ ul {
     float: right;
 }
 
-/*modal*/
+/*modal*/ 
+
+.modal {
+    height:fit-content;
+}
 
 .modal-dialog,
 .modal-content {
@@ -343,18 +347,17 @@ ul {
 
 .modal-dialog {
     max-width: 80%;
-    max-height: 100px;
     border-radius: 10px;
 }
 
-.modal-content {
-    max-width: 100%;
-    padding: 10px;
+.modal-dialog-centered {
+    align-items: self-start;
 }
 
 .modal-hero {
-    margin-top: 0;
-    height: 675px;
+    margin-top: 10px;
+    height: 600px;
+    
 }
 
 .card-modal {
@@ -366,11 +369,11 @@ ul {
     height: 350px;
 }
 
+/*modal*/
 .ep-group {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
 }
 
 #temps {
@@ -390,7 +393,21 @@ ul {
 
 .dropdown-item {
     color: #c1c1c1;
+    border: 1px solid #171717;
 }
+
+#icon {
+    transition: transform 0.3s ease-in-out;
+  }
+
+#eps .mdi-chevron-down {
+    font-size: 18px;
+    color: #fff;
+}
+
+#eps:focus #icon {
+    transform: rotate(180deg);
+  }
 
 .dropdown-item:hover {
     color: #DE1324;
