@@ -105,11 +105,17 @@ button {
 
 /*Home*/
 
+.div-home {
+    padding: 0;
+}
+
 .main-header {
     align-items: center;
     position: absolute;
     width: 100%;
     top: 0;
+    left: 0;
+    margin: 0;
     z-index: 2;
 }
 
@@ -175,29 +181,27 @@ ul {
 
 #infos-hero {
     padding: 0;
-    margin-top: 405px;
+    width: 100%;
+    margin-top: 558px;
     z-index: 3;
+    position: relative;
 }
 
 .box-text {
     background-color: rgba(0, 0, 0, 0.5);
-    height: 295px;
+    width: 100%;
+    padding-bottom: 10px;
+    padding-left: 80px;
     border-radius: 10px;
     z-index: 2;
-    
 }
 
 .title {
     font-size: 30px;
     font-weight: 800;
-    z-index: 3;
+    padding-top: 10px;
+    z-index: 4;
     
-}
-
-.desc {
-    font-size: 16px;
-    width: 640px;
-    z-index: 3;
 }
 
 .btn-play {
@@ -373,12 +377,13 @@ ul {
 .ep-group {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 #temps {
     background-color: #252525;
     width: 110px;
+    margin-top: 3px;
     float: right;
 }
 
@@ -386,14 +391,22 @@ ul {
     width: 600px;
 }
 
-.dropdown-menu {
+.lista-episodios {
     width: 600px;
+    height: 192px;
+    flex-wrap: nowrap;
+    overflow:auto;
     background-color: #252525;
 }
 
-.dropdown-item {
+.episodios {
     color: #c1c1c1;
     border: 1px solid #171717;
+}
+
+.episodios:hover {
+    color: #DE1324;
+    background-color: #2e2e2e;
 }
 
 #icon {
@@ -409,7 +422,3 @@ ul {
     transform: rotate(180deg);
   }
 
-.dropdown-item:hover {
-    color: #DE1324;
-    background-color: #2e2e2e;
-}
