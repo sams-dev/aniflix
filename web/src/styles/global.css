@@ -1,0 +1,427 @@
+@import url('https://fonts.cdnfonts.com/css/sf-mono');
+
+:root {
+    --secondary: 217, 217, 217;
+    --red: #DE1324;
+}
+
+body {
+    background-color: black;
+}
+
+.bg-animes {
+    background-image: url(../assets/bg-aniflix.png);
+    background-size: cover;
+    position: 'fixed'; 
+    height: 100%;
+}
+
+header {
+    max-height: 180px;
+    background: linear-gradient(
+        180deg, rgba(0, 0, 0, 0.9) 0%,
+         rgba(0, 0, 0, 0) 100%);
+}
+
+button {
+    z-index: 3;
+}
+
+.custom-header {
+    padding: 0 50px
+}
+
+.custom-img {
+    width: 250px;
+}
+
+.btn-custom-translucent {
+    background-color: rgba(125, 125, 125, 0.75);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-custom-translucent:hover {
+    color: white;
+    border-color: white;
+}
+
+/*Login*/
+
+.darkbox {
+    background-color:rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    padding: 80px;
+    height: 488px;
+    width: 490px;
+    
+}
+
+
+
+.form-control {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.bg-secondary {
+    background-color: rgba(var(--secondary), 0.2) !important;
+    border-color: rgba(var(--secondary), 0.2);
+    font-weight: bold;
+}
+
+.btn-lg {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn-danger {
+    background-color: var(--red) !important;
+}
+
+.text-muted {
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-singup {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 16px;
+    font-weight: 400;
+    
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+
+/*Home*/
+
+.div-home {
+    padding: 0;
+}
+
+.main-header {
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    z-index: 2;
+}
+
+.img-header {
+    width: 150px;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.menu-list {
+    list-style: none;
+    padding-left: 0;
+    padding-top: 7px;
+    margin-left: -70px;
+    
+    
+
+}
+
+ul {
+    list-style: none;
+}
+
+.menu-list li {
+    display: inline-block;
+    margin-left: 15px;
+    font-size: 18px;
+}
+
+.menu-list li a {
+    color: rgba(255, 255, 255, 0.4);
+    text-decoration: none;
+}
+
+.menu-list li a:hover {
+    color: white;
+}
+
+#hero {
+    height: 700px;
+    padding: 0 !important;
+    width: 100%;
+    background-image: url(../assets/haikyuu.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+}
+
+#hero::after {
+    content: '';
+    width: 100%;
+    height: 270px;
+    display: block;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%);
+    position: absolute;
+    left: 0;
+    z-index: 2;
+    top: calc(700px - 270px);
+}
+
+#infos-hero {
+    padding: 0;
+    width: 100%;
+    margin-top: 558px;
+    z-index: 3;
+    position: relative;
+}
+
+.box-text {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding-bottom: 10px;
+    padding-left: 80px;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 800;
+    padding-top: 10px;
+    z-index: 4;
+    
+}
+
+.btn-play {
+    margin-right: 10px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.btn-play:hover {
+    background-color: rgba(277, 277, 277, 0.8);
+}
+
+.mdi-play{
+    font-size: 21px;
+}
+
+.mdi-information-outline {
+    font-size: 25px;
+    margin-right: 5px;
+}
+
+.main-content {
+    margin-top: 725px;
+    z-index: 5;
+}
+
+.list-filmes {
+    overflow-x: scroll;
+    white-space: nowrap;
+    list-style: none;
+    padding: 20px 0;
+    display: block;
+    
+}
+
+.list-filmes::-webkit-scrollbar {
+    display: none;
+}
+
+.filme {
+    display: inline-block;
+    margin-right: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 0.3s;
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.4);
+}
+
+.filme:first-child {
+    margin-left: 75px;
+}
+
+.filme:hover {
+    transform: scale(1.10);
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, 
+                rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.card {
+    padding: 10px;
+    width: 200px;
+}
+
+.card img {
+    border-radius: 5px;
+}
+
+.card h1 {
+    font-weight: 900;
+    font-family: 'SF Mono', sans-serif !important;
+    font-size: 22px;
+
+}
+
+.card h1 text {
+    font-weight: 600;
+    font-size: 16px;
+    padding-left: 10px;
+    
+}
+
+.card p {
+    margin-bottom: -05px;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 12px;
+    padding-bottom: 5px;
+}
+
+.card p text {
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: px;
+}
+
+.score {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 3px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: 2px solid #1b1b1b;
+    float: left;
+    color: #fff;
+    font-weight: 500;
+}
+
+.mdi {
+    font-size: 24px;
+    float: right;
+}
+
+.mdi-heart:hover {
+    color: #DE1324;
+}
+
+.mdi-bookmark:hover {
+    color: #171717;
+}
+
+.mdi-chevron-down {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.mdi-chevron-down:hover {
+    color: black;
+}
+
+.btn-light {
+    size: 24px;
+    padding: 0;
+    margin: 0;
+    float: right;
+}
+
+/*modal*/ 
+
+.modal {
+    height:fit-content;
+}
+
+.modal-dialog,
+.modal-content {
+    background-color: #1b1b1b;
+}
+
+.modal-dialog {
+    max-width: 80%;
+    border-radius: 10px;
+}
+
+.modal-dialog-centered {
+    align-items: self-start;
+}
+
+.modal-hero {
+    margin-top: 10px;
+    height: 600px;
+    
+}
+
+.card-modal {
+    width: 350px;
+}
+
+.sinopse {
+    max-width: 740px;
+    height: 350px;
+}
+
+/*modal*/
+.ep-group {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#temps {
+    background-color: #252525;
+    width: 120px;
+    margin-top: 3px;
+    float: right;
+}
+
+#eps {
+    width: 600px;
+}
+
+.lista-episodios {
+    width: 600px;
+    height: 192px;
+    flex-wrap: nowrap;
+    overflow:auto;
+    background-color: #252525;
+}
+
+.episodios {
+    color: #c1c1c1;
+    border: 1px solid #171717;
+}
+
+.episodios:hover {
+    color: #DE1324;
+    background-color: #2e2e2e;
+}
+
+#icon {
+    transition: transform 0.3s ease-in-out;
+  }
+
+#eps .mdi-chevron-down {
+    font-size: 18px;
+    color: #fff;
+}
+
+#eps:focus #icon {
+    transform: rotate(180deg);
+  }
+
