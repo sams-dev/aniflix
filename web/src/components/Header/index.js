@@ -1,11 +1,11 @@
-const Header = () => {
+const Header = ({hideMenu}) => {
 
  return (
   <header class="row main-header">
    <div class="col-2">
     <img class="img-header" src={require("../../assets/logo-aniflix-.png")} />
    </div>
-   <div class="col-8">
+   {!hideMenu && (<div class="col-8">
     <ul class="menu-list">
      <li>
       <a href="#"> Home</a>
@@ -20,7 +20,8 @@ const Header = () => {
       <a href="#"> Minha Lista</a>
      </li>
     </ul>
-   </div>
+   </div>)}
+   
   </header>
  );
 };

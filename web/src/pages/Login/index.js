@@ -5,7 +5,7 @@ const Login = () => {
 
  return (
 	<div className="container-fluid bg-animes">
-  <Header/>
+  <Header hideMenu />
   <main>
    <div className="col-4 offset-4 darkbox">
     <h1 className="text-white">Entrar</h1>
@@ -37,7 +37,7 @@ const Login = () => {
     </form>
    </div>
   </main>
-		<footer className="footer"></footer>
+  <footer className="footer"></footer>
  </div>
  );
 };
