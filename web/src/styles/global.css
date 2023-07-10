@@ -114,7 +114,7 @@ button {
 
 .main-header {
     align-items: center;
-    position: absolute;
+    position: relative;
     width: 100%;
     top: 0;
     left: 0;
@@ -131,11 +131,10 @@ button {
 .menu-list {
     list-style: none;
     padding-left: 0;
-    padding-top: 7px;
+    padding-top: 5px;
     margin-left: -70px;
-    
-    
-
+    display: flex;
+    align-items: center;
 }
 
 ul {
@@ -155,6 +154,26 @@ ul {
 
 .menu-list li a:hover {
     color: white;
+}
+
+.btn-login{
+    position: absolute;
+    right: 60px;
+    float: right;
+ 
+}
+
+.btn-config {
+    float: right;
+    position: absolute;
+    right: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+}
+
+.mdi-menu{
+    font-size: 30px;
 }
 
 #hero {
@@ -312,11 +331,6 @@ ul {
     float: left;
     color: #fff;
     font-weight: 500;
-}
-
-.mdi {
-    font-size: 24px;
-    float: right;
 }
 
 .mdi-heart:hover {

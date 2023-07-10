@@ -1,4 +1,6 @@
-const Header = ({hideMenu}) => {
+
+
+const Header = ({ hideMenu }) => {
 
  return (
   <header class="row main-header">
@@ -19,9 +21,15 @@ const Header = ({hideMenu}) => {
      <li>
       <a href="#"> Minha Lista</a>
      </li>
+     <button className="btn btn-md btn-danger btn-login">login</button>
+     <button class="btn btn-md btn-config text-center">
+      <span class="mdi mdi-menu"></span>
+      
+     </button>
     </ul>
+
    </div>)}
-   
+
   </header>
  );
 };
