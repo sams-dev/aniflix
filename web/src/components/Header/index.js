@@ -1,14 +1,16 @@
-
+import { useNavigate } from "react-router-dom";
 
 const Header = ({ hideMenu }) => {
+ const navigate = useNavigate();
+
 
  return (
-  <header class="row main-header">
-   <div class="col-2">
-    <img class="img-header" src={require("../../assets/logo-aniflix-.png")} />
+  <header className="row main-header">
+   <div className="col-2">
+    <img className="img-header" src={require("../../assets/logo-aniflix-.png")} />
    </div>
-   {!hideMenu && (<div class="col-8">
-    <ul class="menu-list">
+   {!hideMenu && (<div className="col-8">
+    <ul className="menu-list">
      <li>
       <a href="#"> Home</a>
      </li>
@@ -21,10 +23,9 @@ const Header = ({ hideMenu }) => {
      <li>
       <a href="#"> Minha Lista</a>
      </li>
-     <button className="btn btn-md btn-danger btn-login">login</button>
-     <button class="btn btn-md btn-config text-center">
-      <span class="mdi mdi-menu"></span>
-      
+     <button onClick={() => {navigate("/login")}} className="btn btn-md btn-danger btn-login">login</button>
+     <button className="btn btn-md btn-config text-center">
+      <span className="mdi mdi-menu"></span>
      </button>
     </ul>
 
