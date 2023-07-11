@@ -348,12 +348,24 @@ ul {
     font-weight: 500;
 }
 
+.mdi-heart{
+    font-size: 26px;
+}
+
 .mdi-heart:hover {
     color: #DE1324;
 }
 
+.mdi-bookmark{
+    font-size: 26px;
+}
+
 .mdi-bookmark:hover {
     color: #171717;
+}
+
+.mdi-chevron-down{
+    font-size: 26px;
 }
 
 .mdi-chevron-down {
@@ -362,6 +374,10 @@ ul {
 
 .mdi-chevron-down:hover {
     color: black;
+}
+
+.mdi-chevron-up {
+    font-size: 26px;
 }
 
 .btn-light {
