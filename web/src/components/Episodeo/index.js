@@ -1,8 +1,9 @@
 const Episodeo = () => {
-
+/*no meu episodeo ao clickar no button eu quero q na minha modal
+mostre o video selecionado */
  return (
-  <li><a class="dropdown-item episodios" href="https://betteranime.net/anime/dublado/blue-lock-dublado/episodio-01"
-   target="_blank"> (anime) - Episodio 1</a></li>
+  <li><button class="dropdown-item episodios" data-bs-toggle="modal" data-bs-target="#modal-filmeS"
+   target="_blank"> (anime) - Episodio 1</button></li>
  );
 };
 
