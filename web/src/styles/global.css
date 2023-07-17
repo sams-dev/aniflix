@@ -264,6 +264,8 @@ ul {
 }
 
 .main-content {
+    display: flex;
+    justify-content: center;
     margin-top: 725px;
     z-index: 5;
 }
@@ -287,16 +289,23 @@ ul {
     border-radius: 5px;
     overflow: hidden;
     transition: 0.3s;
+    position: relative;
+    z-index: 1;
     box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.4);
 }
 
 .filme:first-child {
-    margin-left: 75px;
+    margin-left: 10px;
+}
+
+.filme:last-child {
+    margin-right: 10px;
 }
 
 .filme:hover {
     transform: scale(1.10);
     cursor: pointer;
+    z-index: 2;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, 
                 rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
@@ -325,7 +334,7 @@ ul {
 }
 
 .card p {
-    margin-bottom: -05px;
+    margin-bottom: -5px;
     color: rgba(0, 0, 0, 0.7);
     font-size: 12px;
     padding-bottom: 5px;
@@ -334,7 +343,6 @@ ul {
 .card p text {
     font-size: 14px;
     font-weight: 600;
-    margin-left: px;
 }
 
 .score {
