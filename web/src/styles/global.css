@@ -220,8 +220,11 @@ ul {
     padding: 0;
     width: 100%;
     margin-top: 558px;
+    padding-left: 40px;
     z-index: 3;
+    align-items: flex-start;
     position: relative;
+    flex-wrap: nowrap;
 }
 
 .box-text {
